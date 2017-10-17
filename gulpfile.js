@@ -13,7 +13,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('src/**/*.ts')
+    return gulp.src('src/ts/*.ts')
         .pipe(tsProject())
         .pipe(gulp.dest('build/js/'))
         .pipe(rename('portfolio.min.js'))
@@ -22,7 +22,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src('src/**/*.scss')
+    return gulp.src('src/scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('build/'))
         .pipe(cssmin())
@@ -31,7 +31,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function () {
-    return gulp.src('src/**/*.html')
+    return gulp.src('src/html/*.html')
         .pipe(gulp.dest('build/html/'))
         .pipe(gulp.dest('dist/'));
 });
