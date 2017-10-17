@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "target": "es5",
+    "sourceMap": true,
+    "removeComments": true,
+    "outFile": "ts.js",
+    "outDir": "./build"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
