@@ -1,0 +1,7 @@
+@import "flex-base";
+
+@media screen and (max-width: 768px) {
+  @each $p in $flex-percentages {
+    @include flex-percent($p, "small");
+  }
+}

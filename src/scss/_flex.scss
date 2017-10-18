@@ -1,3 +1,19 @@
+@import "flex-base";
+
+@each $p in $flex-percentages {
+  @include flex-percent($p);
+}
+
+/* Small screens */
+@import "flex-small";
+
+/* Medium screens */
+@import "flex-medium";
+
+/* Large screens */
+@import "flex-large";
+
+/* Flex containers */
 .flex {
   display: flex;
   display: -webkit-flex;
@@ -47,8 +63,14 @@
     justify-content: space-between;
     -webkit-justify-content: space-between;
   }
+
+  &.distribute {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  }
 }
 
+/* Flex items */
 .flex-grow {
   flex: 1 0 auto;
   -webkit-flex: 1 0 auto;
@@ -67,54 +89,4 @@
 .flex-start {
   align-self: flex-start;
   -webkit-align-self: flex-start;
-}
-
-.flex-10 {
-  flex: 0 0 10%;
-  -webkit-flex: 0 0 10%;
-}
-
-.flex-20 {
-  flex: 0 0 20%;
-  -webkit-flex: 0 0 20%;
-}
-
-.flex-30 {
-  flex: 0 0 30%;
-  -webkit-flex: 0 0 30%;
-}
-
-.flex-40 {
-  flex: 0 0 40%;
-  -webkit-flex: 0 0 40%;
-}
-
-.flex-50 {
-  flex: 0 0 50%;
-  -webkit-flex: 0 0 50%;
-}
-
-.flex-60 {
-  flex: 0 0 60%;
-  -webkit-flex: 0 0 60%;
-}
-
-.flex-70 {
-  flex: 0 0 70%;
-  -webkit-flex: 0 0 70%;
-}
-
-.flex-80 {
-  flex: 0 0 80%;
-  -webkit-flex: 0 0 80%;
-}
-
-.flex-90 {
-  flex: 0 0 90%;
-  -webkit-flex: 0 0 90%;
-}
-
-.flex-100 {
-  flex: 0 0 100%;
-  -webkit-flex: 0 0 100%;
 }
