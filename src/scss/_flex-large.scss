@@ -1,7 +1,10 @@
 @import "flex-base";
 
+$prefix: "large";
+
 @media screen and (min-width: 1000px) {
   @each $p in $flex-percentages {
-    @include flex-percent($p, "large");
+    @include flex-percent($p, $prefix);
   }
+  @include flex-common($prefix);
 }
