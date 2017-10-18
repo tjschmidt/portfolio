@@ -59,6 +59,16 @@
     -webkit-justify-content: center;
   }
 
+  &.center-v {
+    align-items: center;
+    -webkit-align-items: center;
+  }
+
+  &.center-h {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+
   &.spread {
     justify-content: space-between;
     -webkit-justify-content: space-between;
