@@ -83,7 +83,7 @@ $flex-percentages: 10 20 25 30 33 40 50 60 66 70 75 80 90 100;
       }
 
       &.padded-#{$prefix} > * {
-        padding: 1em;
+        padding: 1em 2em;
       }
     }
   }
@@ -154,7 +154,7 @@ $flex-percentages: 10 20 25 30 33 40 50 60 66 70 75 80 90 100;
       }
 
       &.padded > * {
-        padding: 1em;
+        padding: 1em 2em;
       }
     }
   }
