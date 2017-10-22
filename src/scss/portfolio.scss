@@ -54,7 +54,7 @@ a {
 
 .page-header, .page-footer {
   background: $secondary-accent-color;
-  color: $font-color-light;
+  color: $font-color-negative-light;
   //margin: $font-size;
   padding: $font-size;
 }
@@ -86,6 +86,35 @@ a {
       width: auto;
       padding-left: 0.5em;
       padding-right: 0.5em;
+    }
+
+    .quote {
+      margin: 1em 0;
+
+      .content {
+        font-family: $font-stack-accent;
+        font-style: italic;
+        line-height: 1.4;
+
+        &::before {
+          content: "\201C";
+        }
+
+        &::after {
+          content: "\201D";
+        }
+      }
+
+      .author {
+        font-size: $font-size * 0.9;
+        color: $font-color-light;
+        text-align: right;
+        padding: 0.25em;
+
+        &::before {
+          content: "\2014 \2009";
+        }
+      }
     }
   }
 
