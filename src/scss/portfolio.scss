@@ -7,7 +7,7 @@ html {
   font-family: $font-stack;
   font-size: $font-size;
   color: $font-color;
-  background: $background-color;
+  background: $font-background-color;
 }
 
 a {
@@ -47,19 +47,26 @@ a {
   margin: 0;
 }
 
+.content-container {
+  padding: 0 0.5em;
+  //border-left: 1px solid $divider-color;
+  //border-right: 1px solid $divider-color;
+  background: $font-background-color-light;
+}
+
 .page-header, .page-footer {
   background: $secondary-accent-color;
-  color: $font-color-negative;
+  color: $font-color-light;
   //margin: $font-size;
   padding: $font-size;
 }
 
 .page-sections {
-  margin: 2*$font-size 4*$font-size;
+  margin: 2*$font-size 0;
 }
 
 .page-section {
-  background: $font-background-color;
+  background: $font-background-color-light;
   margin-bottom: 2em;
 }
 
@@ -85,7 +92,8 @@ a {
   }
 
   .section-header {
-    background: $accent-color;
+    //background: $accent-color;
+    border-bottom: 0.5em solid $accent-color;
   }
 
   .subsection {
@@ -97,9 +105,10 @@ a {
     }
 
     .section-header {
-      background: $secondary-color;
+      //background: $secondary-color;
+      border-bottom: 0.5em solid $secondary-color;
       padding: 0.5em;
-      color: $font-color-light;
+      color: $font-color;
     }
   }
 }
